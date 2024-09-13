@@ -10,13 +10,4 @@ public class WhenLevelComplete : MonoBehaviour
         Time.timeScale = 1;
     }
 
-    public void mainMenuPressedUp(){
-        SceneManager.LoadScene(0);
-        BGMmusic.instance.GetComponent<AudioSource>().Play();
-        Time.timeScale = 1;
-    }
-    private void GameQuit(){
-        Application.Quit();
-        Debug.Log("Quit Game Done");
-    }
 }
